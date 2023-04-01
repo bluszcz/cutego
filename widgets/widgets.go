@@ -1,3 +1,4 @@
+//go:build !minimal
 // +build !minimal
 
 package widgets
@@ -599,8 +600,9 @@ func NewQAbstractItemDelegateFromPointer(ptr unsafe.Pointer) (n *QAbstractItemDe
 	return
 }
 
+// QAbstractItemDelegate::EndEditHint
+//
 //go:generate stringer -type=QAbstractItemDelegate__EndEditHint
-//QAbstractItemDelegate::EndEditHint
 type QAbstractItemDelegate__EndEditHint int64
 
 const (
@@ -1019,8 +1021,9 @@ func NewQAbstractItemViewFromPointer(ptr unsafe.Pointer) (n *QAbstractItemView) 
 	return
 }
 
+// QAbstractItemView::SelectionMode
+//
 //go:generate stringer -type=QAbstractItemView__SelectionMode
-//QAbstractItemView::SelectionMode
 type QAbstractItemView__SelectionMode int64
 
 const (
@@ -1031,8 +1034,9 @@ const (
 	QAbstractItemView__ContiguousSelection QAbstractItemView__SelectionMode = QAbstractItemView__SelectionMode(4)
 )
 
+// QAbstractItemView::SelectionBehavior
+//
 //go:generate stringer -type=QAbstractItemView__SelectionBehavior
-//QAbstractItemView::SelectionBehavior
 type QAbstractItemView__SelectionBehavior int64
 
 const (
@@ -1041,8 +1045,9 @@ const (
 	QAbstractItemView__SelectColumns QAbstractItemView__SelectionBehavior = QAbstractItemView__SelectionBehavior(2)
 )
 
+// QAbstractItemView::ScrollHint
+//
 //go:generate stringer -type=QAbstractItemView__ScrollHint
-//QAbstractItemView::ScrollHint
 type QAbstractItemView__ScrollHint int64
 
 const (
@@ -1052,8 +1057,9 @@ const (
 	QAbstractItemView__PositionAtCenter QAbstractItemView__ScrollHint = QAbstractItemView__ScrollHint(3)
 )
 
+// QAbstractItemView::EditTrigger
+//
 //go:generate stringer -type=QAbstractItemView__EditTrigger
-//QAbstractItemView::EditTrigger
 type QAbstractItemView__EditTrigger int64
 
 const (
@@ -1066,8 +1072,9 @@ const (
 	QAbstractItemView__AllEditTriggers QAbstractItemView__EditTrigger = QAbstractItemView__EditTrigger(31)
 )
 
+// QAbstractItemView::ScrollMode
+//
 //go:generate stringer -type=QAbstractItemView__ScrollMode
-//QAbstractItemView::ScrollMode
 type QAbstractItemView__ScrollMode int64
 
 const (
@@ -1075,8 +1082,9 @@ const (
 	QAbstractItemView__ScrollPerPixel QAbstractItemView__ScrollMode = QAbstractItemView__ScrollMode(1)
 )
 
+// QAbstractItemView::DragDropMode
+//
 //go:generate stringer -type=QAbstractItemView__DragDropMode
-//QAbstractItemView::DragDropMode
 type QAbstractItemView__DragDropMode int64
 
 const (
@@ -1087,8 +1095,9 @@ const (
 	QAbstractItemView__InternalMove QAbstractItemView__DragDropMode = QAbstractItemView__DragDropMode(4)
 )
 
+// QAbstractItemView::CursorAction
+//
 //go:generate stringer -type=QAbstractItemView__CursorAction
-//QAbstractItemView::CursorAction
 type QAbstractItemView__CursorAction int64
 
 const (
@@ -1104,8 +1113,9 @@ const (
 	QAbstractItemView__MovePrevious QAbstractItemView__CursorAction = QAbstractItemView__CursorAction(9)
 )
 
+// QAbstractItemView::State
+//
 //go:generate stringer -type=QAbstractItemView__State
-//QAbstractItemView::State
 type QAbstractItemView__State int64
 
 const (
@@ -1118,8 +1128,9 @@ const (
 	QAbstractItemView__AnimatingState     QAbstractItemView__State = QAbstractItemView__State(6)
 )
 
+// QAbstractItemView::DropIndicatorPosition
+//
 //go:generate stringer -type=QAbstractItemView__DropIndicatorPosition
-//QAbstractItemView::DropIndicatorPosition
 type QAbstractItemView__DropIndicatorPosition int64
 
 const (
@@ -2327,8 +2338,9 @@ func NewQAbstractScrollAreaFromPointer(ptr unsafe.Pointer) (n *QAbstractScrollAr
 	return
 }
 
+// QAbstractScrollArea::SizeAdjustPolicy
+//
 //go:generate stringer -type=QAbstractScrollArea__SizeAdjustPolicy
-//QAbstractScrollArea::SizeAdjustPolicy
 type QAbstractScrollArea__SizeAdjustPolicy int64
 
 const (
@@ -2605,8 +2617,9 @@ func NewQAbstractSliderFromPointer(ptr unsafe.Pointer) (n *QAbstractSlider) {
 	return
 }
 
+// QAbstractSlider::SliderAction
+//
 //go:generate stringer -type=QAbstractSlider__SliderAction
-//QAbstractSlider::SliderAction
 type QAbstractSlider__SliderAction int64
 
 const (
@@ -2620,8 +2633,9 @@ const (
 	QAbstractSlider__SliderMove          QAbstractSlider__SliderAction = QAbstractSlider__SliderAction(7)
 )
 
+// QAbstractSlider::SliderChange
+//
 //go:generate stringer -type=QAbstractSlider__SliderChange
-//QAbstractSlider::SliderChange
 type QAbstractSlider__SliderChange int64
 
 const (
@@ -2989,8 +3003,9 @@ func NewQAbstractSpinBoxFromPointer(ptr unsafe.Pointer) (n *QAbstractSpinBox) {
 	return
 }
 
+// QAbstractSpinBox::StepEnabledFlag
+//
 //go:generate stringer -type=QAbstractSpinBox__StepEnabledFlag
-//QAbstractSpinBox::StepEnabledFlag
 type QAbstractSpinBox__StepEnabledFlag int64
 
 const (
@@ -2999,8 +3014,9 @@ const (
 	QAbstractSpinBox__StepDownEnabled QAbstractSpinBox__StepEnabledFlag = QAbstractSpinBox__StepEnabledFlag(0x02)
 )
 
+// QAbstractSpinBox::ButtonSymbols
+//
 //go:generate stringer -type=QAbstractSpinBox__ButtonSymbols
-//QAbstractSpinBox::ButtonSymbols
 type QAbstractSpinBox__ButtonSymbols int64
 
 const (
@@ -3009,8 +3025,9 @@ const (
 	QAbstractSpinBox__NoButtons    QAbstractSpinBox__ButtonSymbols = QAbstractSpinBox__ButtonSymbols(2)
 )
 
+// QAbstractSpinBox::CorrectionMode
+//
 //go:generate stringer -type=QAbstractSpinBox__CorrectionMode
-//QAbstractSpinBox::CorrectionMode
 type QAbstractSpinBox__CorrectionMode int64
 
 const (
@@ -3018,8 +3035,9 @@ const (
 	QAbstractSpinBox__CorrectToNearestValue  QAbstractSpinBox__CorrectionMode = QAbstractSpinBox__CorrectionMode(1)
 )
 
+// QAbstractSpinBox::StepType
+//
 //go:generate stringer -type=QAbstractSpinBox__StepType
-//QAbstractSpinBox::StepType
 type QAbstractSpinBox__StepType int64
 
 const (
@@ -3861,8 +3879,9 @@ func NewQActionFromPointer(ptr unsafe.Pointer) (n *QAction) {
 	return
 }
 
+// QAction::MenuRole
+//
 //go:generate stringer -type=QAction__MenuRole
-//QAction::MenuRole
 type QAction__MenuRole int64
 
 const (
@@ -3875,8 +3894,9 @@ const (
 	QAction__QuitRole                QAction__MenuRole = QAction__MenuRole(6)
 )
 
+// QAction::Priority
+//
 //go:generate stringer -type=QAction__Priority
-//QAction::Priority
 type QAction__Priority int64
 
 const (
@@ -3885,8 +3905,9 @@ const (
 	QAction__HighPriority   QAction__Priority = QAction__Priority(256)
 )
 
+// QAction::ActionEvent
+//
 //go:generate stringer -type=QAction__ActionEvent
-//QAction::ActionEvent
 type QAction__ActionEvent int64
 
 const (
@@ -5744,8 +5765,9 @@ func NewQBoxLayoutFromPointer(ptr unsafe.Pointer) (n *QBoxLayout) {
 	return
 }
 
+// QBoxLayout::Direction
+//
 //go:generate stringer -type=QBoxLayout__Direction
-//QBoxLayout::Direction
 type QBoxLayout__Direction int64
 
 const (
@@ -6382,8 +6404,9 @@ func NewQCalendarWidgetFromPointer(ptr unsafe.Pointer) (n *QCalendarWidget) {
 	return
 }
 
+// QCalendarWidget::VerticalHeaderFormat
+//
 //go:generate stringer -type=QCalendarWidget__VerticalHeaderFormat
-//QCalendarWidget::VerticalHeaderFormat
 type QCalendarWidget__VerticalHeaderFormat int64
 
 const (
@@ -6391,8 +6414,9 @@ const (
 	QCalendarWidget__ISOWeekNumbers   QCalendarWidget__VerticalHeaderFormat = QCalendarWidget__VerticalHeaderFormat(1)
 )
 
+// QCalendarWidget::SelectionMode
+//
 //go:generate stringer -type=QCalendarWidget__SelectionMode
-//QCalendarWidget::SelectionMode
 type QCalendarWidget__SelectionMode int64
 
 const (
@@ -6400,8 +6424,9 @@ const (
 	QCalendarWidget__SingleSelection QCalendarWidget__SelectionMode = QCalendarWidget__SelectionMode(1)
 )
 
+// QCalendarWidget::HorizontalHeaderFormat
+//
 //go:generate stringer -type=QCalendarWidget__HorizontalHeaderFormat
-//QCalendarWidget::HorizontalHeaderFormat
 type QCalendarWidget__HorizontalHeaderFormat int64
 
 const (
@@ -7106,8 +7131,9 @@ func NewQColorDialogFromPointer(ptr unsafe.Pointer) (n *QColorDialog) {
 	return
 }
 
+// QColorDialog::ColorDialogOption
+//
 //go:generate stringer -type=QColorDialog__ColorDialogOption
-//QColorDialog::ColorDialogOption
 type QColorDialog__ColorDialogOption int64
 
 const (
@@ -7338,8 +7364,9 @@ func NewQColormapFromPointer(ptr unsafe.Pointer) (n *QColormap) {
 	return
 }
 
+// QColormap::Mode
+//
 //go:generate stringer -type=QColormap__Mode
-//QColormap::Mode
 type QColormap__Mode int64
 
 const (
@@ -7893,8 +7920,9 @@ func NewQComboBoxFromPointer(ptr unsafe.Pointer) (n *QComboBox) {
 	return
 }
 
+// QComboBox::InsertPolicy
+//
 //go:generate stringer -type=QComboBox__InsertPolicy
-//QComboBox::InsertPolicy
 type QComboBox__InsertPolicy int64
 
 const (
@@ -7907,8 +7935,9 @@ const (
 	QComboBox__InsertAlphabetically QComboBox__InsertPolicy = QComboBox__InsertPolicy(6)
 )
 
+// QComboBox::SizeAdjustPolicy
+//
 //go:generate stringer -type=QComboBox__SizeAdjustPolicy
-//QComboBox::SizeAdjustPolicy
 type QComboBox__SizeAdjustPolicy int64
 
 const (
@@ -8925,8 +8954,9 @@ func NewQCompleterFromPointer(ptr unsafe.Pointer) (n *QCompleter) {
 	return
 }
 
+// QCompleter::CompletionMode
+//
 //go:generate stringer -type=QCompleter__CompletionMode
-//QCompleter::CompletionMode
 type QCompleter__CompletionMode int64
 
 const (
@@ -8935,8 +8965,9 @@ const (
 	QCompleter__InlineCompletion          QCompleter__CompletionMode = QCompleter__CompletionMode(2)
 )
 
+// QCompleter::ModelSorting
+//
 //go:generate stringer -type=QCompleter__ModelSorting
-//QCompleter::ModelSorting
 type QCompleter__ModelSorting int64
 
 const (
@@ -9433,8 +9464,9 @@ func NewQDataWidgetMapperFromPointer(ptr unsafe.Pointer) (n *QDataWidgetMapper) 
 	return
 }
 
+// QDataWidgetMapper::SubmitPolicy
+//
 //go:generate stringer -type=QDataWidgetMapper__SubmitPolicy
-//QDataWidgetMapper::SubmitPolicy
 type QDataWidgetMapper__SubmitPolicy int64
 
 const (
@@ -9962,8 +9994,9 @@ func NewQDateTimeEditFromPointer(ptr unsafe.Pointer) (n *QDateTimeEdit) {
 	return
 }
 
+// QDateTimeEdit::Section
+//
 //go:generate stringer -type=QDateTimeEdit__Section
-//QDateTimeEdit::Section
 type QDateTimeEdit__Section int64
 
 const (
@@ -10765,8 +10798,9 @@ func NewQDialogFromPointer(ptr unsafe.Pointer) (n *QDialog) {
 	return
 }
 
+// QDialog::DialogCode
+//
 //go:generate stringer -type=QDialog__DialogCode
-//QDialog::DialogCode
 type QDialog__DialogCode int64
 
 const (
@@ -11037,8 +11071,9 @@ func NewQDialogButtonBoxFromPointer(ptr unsafe.Pointer) (n *QDialogButtonBox) {
 	return
 }
 
+// QDialogButtonBox::ButtonRole
+//
 //go:generate stringer -type=QDialogButtonBox__ButtonRole
-//QDialogButtonBox::ButtonRole
 type QDialogButtonBox__ButtonRole int64
 
 const (
@@ -11055,8 +11090,9 @@ const (
 	QDialogButtonBox__NRoles          QDialogButtonBox__ButtonRole = QDialogButtonBox__ButtonRole(9)
 )
 
+// QDialogButtonBox::StandardButton
+//
 //go:generate stringer -type=QDialogButtonBox__StandardButton
-//QDialogButtonBox::StandardButton
 type QDialogButtonBox__StandardButton int64
 
 const (
@@ -11083,8 +11119,9 @@ const (
 	QDialogButtonBox__LastButton      QDialogButtonBox__StandardButton = QDialogButtonBox__StandardButton(QDialogButtonBox__RestoreDefaults)
 )
 
+// QDialogButtonBox::ButtonLayout
+//
 //go:generate stringer -type=QDialogButtonBox__ButtonLayout
-//QDialogButtonBox::ButtonLayout
 type QDialogButtonBox__ButtonLayout int64
 
 var (
@@ -11333,8 +11370,9 @@ func NewQDirModelFromPointer(ptr unsafe.Pointer) (n *QDirModel) {
 	return
 }
 
+// QDirModel::Roles
+//
 //go:generate stringer -type=QDirModel__Roles
-//QDirModel::Roles
 type QDirModel__Roles int64
 
 var (
@@ -12166,8 +12204,9 @@ func NewQDockWidgetFromPointer(ptr unsafe.Pointer) (n *QDockWidget) {
 	return
 }
 
+// QDockWidget::DockWidgetFeature
+//
 //go:generate stringer -type=QDockWidget__DockWidgetFeature
-//QDockWidget::DockWidgetFeature
 type QDockWidget__DockWidgetFeature int64
 
 const (
@@ -12787,8 +12826,9 @@ func NewQFileDialogFromPointer(ptr unsafe.Pointer) (n *QFileDialog) {
 	return
 }
 
+// QFileDialog::ViewMode
+//
 //go:generate stringer -type=QFileDialog__ViewMode
-//QFileDialog::ViewMode
 type QFileDialog__ViewMode int64
 
 const (
@@ -12796,8 +12836,9 @@ const (
 	QFileDialog__List   QFileDialog__ViewMode = QFileDialog__ViewMode(1)
 )
 
+// QFileDialog::FileMode
+//
 //go:generate stringer -type=QFileDialog__FileMode
-//QFileDialog::FileMode
 type QFileDialog__FileMode int64
 
 const (
@@ -12808,8 +12849,9 @@ const (
 	QFileDialog__DirectoryOnly QFileDialog__FileMode = QFileDialog__FileMode(4)
 )
 
+// QFileDialog::AcceptMode
+//
 //go:generate stringer -type=QFileDialog__AcceptMode
-//QFileDialog::AcceptMode
 type QFileDialog__AcceptMode int64
 
 const (
@@ -12817,8 +12859,9 @@ const (
 	QFileDialog__AcceptSave QFileDialog__AcceptMode = QFileDialog__AcceptMode(1)
 )
 
+// QFileDialog::DialogLabel
+//
 //go:generate stringer -type=QFileDialog__DialogLabel
-//QFileDialog::DialogLabel
 type QFileDialog__DialogLabel int64
 
 const (
@@ -12829,8 +12872,9 @@ const (
 	QFileDialog__Reject   QFileDialog__DialogLabel = QFileDialog__DialogLabel(4)
 )
 
+// QFileDialog::Option
+//
 //go:generate stringer -type=QFileDialog__Option
-//QFileDialog::Option
 type QFileDialog__Option int64
 
 const (
@@ -13531,8 +13575,9 @@ func NewQFileIconProviderFromPointer(ptr unsafe.Pointer) (n *QFileIconProvider) 
 	return
 }
 
+// QFileIconProvider::IconType
+//
 //go:generate stringer -type=QFileIconProvider__IconType
-//QFileIconProvider::IconType
 type QFileIconProvider__IconType int64
 
 const (
@@ -13545,8 +13590,9 @@ const (
 	QFileIconProvider__File     QFileIconProvider__IconType = QFileIconProvider__IconType(6)
 )
 
+// QFileIconProvider::Option
+//
 //go:generate stringer -type=QFileIconProvider__Option
-//QFileIconProvider::Option
 type QFileIconProvider__Option int64
 
 const (
@@ -13696,8 +13742,9 @@ func NewQFileSystemModelFromPointer(ptr unsafe.Pointer) (n *QFileSystemModel) {
 	return
 }
 
+// QFileSystemModel::Roles
+//
 //go:generate stringer -type=QFileSystemModel__Roles
-//QFileSystemModel::Roles
 type QFileSystemModel__Roles int64
 
 var (
@@ -14662,8 +14709,9 @@ func NewQFontComboBoxFromPointer(ptr unsafe.Pointer) (n *QFontComboBox) {
 	return
 }
 
+// QFontComboBox::FontFilter
+//
 //go:generate stringer -type=QFontComboBox__FontFilter
-//QFontComboBox::FontFilter
 type QFontComboBox__FontFilter int64
 
 const (
@@ -14805,8 +14853,9 @@ func NewQFontDialogFromPointer(ptr unsafe.Pointer) (n *QFontDialog) {
 func (ptr *QFontDialog) DestroyQFontDialog() {
 }
 
+// QFontDialog::FontDialogOption
+//
 //go:generate stringer -type=QFontDialog__FontDialogOption
-//QFontDialog::FontDialogOption
 type QFontDialog__FontDialogOption int64
 
 const (
@@ -14986,8 +15035,9 @@ func NewQFormLayoutFromPointer(ptr unsafe.Pointer) (n *QFormLayout) {
 	return
 }
 
+// QFormLayout::FieldGrowthPolicy
+//
 //go:generate stringer -type=QFormLayout__FieldGrowthPolicy
-//QFormLayout::FieldGrowthPolicy
 type QFormLayout__FieldGrowthPolicy int64
 
 const (
@@ -14996,8 +15046,9 @@ const (
 	QFormLayout__AllNonFixedFieldsGrow QFormLayout__FieldGrowthPolicy = QFormLayout__FieldGrowthPolicy(2)
 )
 
+// QFormLayout::RowWrapPolicy
+//
 //go:generate stringer -type=QFormLayout__RowWrapPolicy
-//QFormLayout::RowWrapPolicy
 type QFormLayout__RowWrapPolicy int64
 
 const (
@@ -15006,8 +15057,9 @@ const (
 	QFormLayout__WrapAllRows  QFormLayout__RowWrapPolicy = QFormLayout__RowWrapPolicy(2)
 )
 
+// QFormLayout::ItemRole
+//
 //go:generate stringer -type=QFormLayout__ItemRole
-//QFormLayout::ItemRole
 type QFormLayout__ItemRole int64
 
 const (
@@ -15334,8 +15386,9 @@ func NewQFrameFromPointer(ptr unsafe.Pointer) (n *QFrame) {
 	return
 }
 
+// QFrame::Shape
+//
 //go:generate stringer -type=QFrame__Shape
-//QFrame::Shape
 type QFrame__Shape int64
 
 const (
@@ -15348,8 +15401,9 @@ const (
 	QFrame__StyledPanel QFrame__Shape = QFrame__Shape(0x0006)
 )
 
+// QFrame::Shadow
+//
 //go:generate stringer -type=QFrame__Shadow
-//QFrame::Shadow
 type QFrame__Shadow int64
 
 const (
@@ -15358,8 +15412,9 @@ const (
 	QFrame__Sunken QFrame__Shadow = QFrame__Shadow(0x0030)
 )
 
+// QFrame::StyleMask
+//
 //go:generate stringer -type=QFrame__StyleMask
-//QFrame::StyleMask
 type QFrame__StyleMask int64
 
 var (
@@ -15510,8 +15565,9 @@ func NewQGestureFromPointer(ptr unsafe.Pointer) (n *QGesture) {
 	return
 }
 
+// QGesture::GestureCancelPolicy
+//
 //go:generate stringer -type=QGesture__GestureCancelPolicy
-//QGesture::GestureCancelPolicy
 type QGesture__GestureCancelPolicy int64
 
 const (
@@ -16103,8 +16159,9 @@ func NewQGestureRecognizerFromPointer(ptr unsafe.Pointer) (n *QGestureRecognizer
 	return
 }
 
+// QGestureRecognizer::ResultFlag
+//
 //go:generate stringer -type=QGestureRecognizer__ResultFlag
-//QGestureRecognizer::ResultFlag
 type QGestureRecognizer__ResultFlag int64
 
 const (
@@ -16660,8 +16717,9 @@ func NewQGraphicsBlurEffectFromPointer(ptr unsafe.Pointer) (n *QGraphicsBlurEffe
 	return
 }
 
+// QGraphicsBlurEffect::BlurHint
+//
 //go:generate stringer -type=QGraphicsBlurEffect__BlurHint
-//QGraphicsBlurEffect::BlurHint
 type QGraphicsBlurEffect__BlurHint int64
 
 const (
@@ -17317,8 +17375,9 @@ func NewQGraphicsEffectFromPointer(ptr unsafe.Pointer) (n *QGraphicsEffect) {
 	return
 }
 
+// QGraphicsEffect::ChangeFlag
+//
 //go:generate stringer -type=QGraphicsEffect__ChangeFlag
-//QGraphicsEffect::ChangeFlag
 type QGraphicsEffect__ChangeFlag int64
 
 const (
@@ -17328,8 +17387,9 @@ const (
 	QGraphicsEffect__SourceInvalidated         QGraphicsEffect__ChangeFlag = QGraphicsEffect__ChangeFlag(0x8)
 )
 
+// QGraphicsEffect::PixmapPadMode
+//
 //go:generate stringer -type=QGraphicsEffect__PixmapPadMode
-//QGraphicsEffect::PixmapPadMode
 type QGraphicsEffect__PixmapPadMode int64
 
 const (
@@ -17661,8 +17721,9 @@ func NewQGraphicsEllipseItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsEllipse
 	return
 }
 
+// QGraphicsEllipseItem::anonymous
+//
 //go:generate stringer -type=QGraphicsEllipseItem__anonymous
-//QGraphicsEllipseItem::anonymous
 type QGraphicsEllipseItem__anonymous int64
 
 const (
@@ -18143,8 +18204,9 @@ func NewQGraphicsItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsItem) {
 	return
 }
 
+// QGraphicsItem::GraphicsItemFlag
+//
 //go:generate stringer -type=QGraphicsItem__GraphicsItemFlag
-//QGraphicsItem::GraphicsItemFlag
 type QGraphicsItem__GraphicsItemFlag int64
 
 const (
@@ -18170,8 +18232,9 @@ const (
 	QGraphicsItem__ItemContainsChildrenInShape          QGraphicsItem__GraphicsItemFlag = QGraphicsItem__GraphicsItemFlag(0x80000)
 )
 
+// QGraphicsItem::GraphicsItemChange
+//
 //go:generate stringer -type=QGraphicsItem__GraphicsItemChange
-//QGraphicsItem::GraphicsItemChange
 type QGraphicsItem__GraphicsItemChange int64
 
 const (
@@ -18211,8 +18274,9 @@ const (
 	QGraphicsItem__ItemTransformOriginPointHasChanged QGraphicsItem__GraphicsItemChange = QGraphicsItem__GraphicsItemChange(33)
 )
 
+// QGraphicsItem::CacheMode
+//
 //go:generate stringer -type=QGraphicsItem__CacheMode
-//QGraphicsItem::CacheMode
 type QGraphicsItem__CacheMode int64
 
 const (
@@ -18221,8 +18285,9 @@ const (
 	QGraphicsItem__DeviceCoordinateCache QGraphicsItem__CacheMode = QGraphicsItem__CacheMode(2)
 )
 
+// QGraphicsItem::PanelModality
+//
 //go:generate stringer -type=QGraphicsItem__PanelModality
-//QGraphicsItem::PanelModality
 type QGraphicsItem__PanelModality int64
 
 const (
@@ -18231,8 +18296,9 @@ const (
 	QGraphicsItem__SceneModal QGraphicsItem__PanelModality = QGraphicsItem__PanelModality(2)
 )
 
+// QGraphicsItem::anonymous
+//
 //go:generate stringer -type=QGraphicsItem__anonymous
-//QGraphicsItem::anonymous
 type QGraphicsItem__anonymous int64
 
 const (
@@ -20180,8 +20246,9 @@ func NewQGraphicsItemGroupFromPointer(ptr unsafe.Pointer) (n *QGraphicsItemGroup
 	return
 }
 
+// QGraphicsItemGroup::anonymous
+//
 //go:generate stringer -type=QGraphicsItemGroup__anonymous
-//QGraphicsItemGroup::anonymous
 type QGraphicsItemGroup__anonymous int64
 
 const (
@@ -20809,8 +20876,9 @@ func NewQGraphicsLineItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsLineItem) 
 	return
 }
 
+// QGraphicsLineItem::anonymous
+//
 //go:generate stringer -type=QGraphicsLineItem__anonymous
-//QGraphicsLineItem::anonymous
 type QGraphicsLineItem__anonymous int64
 
 const (
@@ -21910,8 +21978,9 @@ func NewQGraphicsPathItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsPathItem) 
 	return
 }
 
+// QGraphicsPathItem::anonymous
+//
 //go:generate stringer -type=QGraphicsPathItem__anonymous
-//QGraphicsPathItem::anonymous
 type QGraphicsPathItem__anonymous int64
 
 const (
@@ -22046,8 +22115,9 @@ func NewQGraphicsPixmapItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsPixmapIt
 	return
 }
 
+// QGraphicsPixmapItem::ShapeMode
+//
 //go:generate stringer -type=QGraphicsPixmapItem__ShapeMode
-//QGraphicsPixmapItem::ShapeMode
 type QGraphicsPixmapItem__ShapeMode int64
 
 const (
@@ -22056,8 +22126,9 @@ const (
 	QGraphicsPixmapItem__HeuristicMaskShape QGraphicsPixmapItem__ShapeMode = QGraphicsPixmapItem__ShapeMode(2)
 )
 
+// QGraphicsPixmapItem::anonymous
+//
 //go:generate stringer -type=QGraphicsPixmapItem__anonymous
-//QGraphicsPixmapItem::anonymous
 type QGraphicsPixmapItem__anonymous int64
 
 const (
@@ -22227,8 +22298,9 @@ func NewQGraphicsPolygonItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsPolygon
 	return
 }
 
+// QGraphicsPolygonItem::anonymous
+//
 //go:generate stringer -type=QGraphicsPolygonItem__anonymous
-//QGraphicsPolygonItem::anonymous
 type QGraphicsPolygonItem__anonymous int64
 
 const (
@@ -22373,8 +22445,9 @@ func NewQGraphicsProxyWidgetFromPointer(ptr unsafe.Pointer) (n *QGraphicsProxyWi
 	return
 }
 
+// QGraphicsProxyWidget::anonymous
+//
 //go:generate stringer -type=QGraphicsProxyWidget__anonymous
-//QGraphicsProxyWidget::anonymous
 type QGraphicsProxyWidget__anonymous int64
 
 const (
@@ -22494,8 +22567,9 @@ func NewQGraphicsRectItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsRectItem) 
 	return
 }
 
+// QGraphicsRectItem::anonymous
+//
 //go:generate stringer -type=QGraphicsRectItem__anonymous
-//QGraphicsRectItem::anonymous
 type QGraphicsRectItem__anonymous int64
 
 const (
@@ -23019,8 +23093,9 @@ func NewQGraphicsSceneFromPointer(ptr unsafe.Pointer) (n *QGraphicsScene) {
 	return
 }
 
+// QGraphicsScene::SceneLayer
+//
 //go:generate stringer -type=QGraphicsScene__SceneLayer
-//QGraphicsScene::SceneLayer
 type QGraphicsScene__SceneLayer int64
 
 const (
@@ -23030,8 +23105,9 @@ const (
 	QGraphicsScene__AllLayers       QGraphicsScene__SceneLayer = QGraphicsScene__SceneLayer(0xffff)
 )
 
+// QGraphicsScene::ItemIndexMethod
+//
 //go:generate stringer -type=QGraphicsScene__ItemIndexMethod
-//QGraphicsScene::ItemIndexMethod
 type QGraphicsScene__ItemIndexMethod int64
 
 const (
@@ -24322,8 +24398,9 @@ func NewQGraphicsSceneContextMenuEventFromPointer(ptr unsafe.Pointer) (n *QGraph
 	return
 }
 
+// QGraphicsSceneContextMenuEvent::Reason
+//
 //go:generate stringer -type=QGraphicsSceneContextMenuEvent__Reason
-//QGraphicsSceneContextMenuEvent::Reason
 type QGraphicsSceneContextMenuEvent__Reason int64
 
 const (
@@ -25206,8 +25283,9 @@ func NewQGraphicsSimpleTextItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsSimp
 	return
 }
 
+// QGraphicsSimpleTextItem::anonymous
+//
 //go:generate stringer -type=QGraphicsSimpleTextItem__anonymous
-//QGraphicsSimpleTextItem::anonymous
 type QGraphicsSimpleTextItem__anonymous int64
 
 const (
@@ -25352,8 +25430,9 @@ func NewQGraphicsTextItemFromPointer(ptr unsafe.Pointer) (n *QGraphicsTextItem) 
 	return
 }
 
+// QGraphicsTextItem::anonymous
+//
 //go:generate stringer -type=QGraphicsTextItem__anonymous
-//QGraphicsTextItem::anonymous
 type QGraphicsTextItem__anonymous int64
 
 const (
@@ -25825,8 +25904,9 @@ func NewQGraphicsViewFromPointer(ptr unsafe.Pointer) (n *QGraphicsView) {
 	return
 }
 
+// QGraphicsView::ViewportAnchor
+//
 //go:generate stringer -type=QGraphicsView__ViewportAnchor
-//QGraphicsView::ViewportAnchor
 type QGraphicsView__ViewportAnchor int64
 
 const (
@@ -25835,8 +25915,9 @@ const (
 	QGraphicsView__AnchorUnderMouse QGraphicsView__ViewportAnchor = QGraphicsView__ViewportAnchor(2)
 )
 
+// QGraphicsView::CacheModeFlag
+//
 //go:generate stringer -type=QGraphicsView__CacheModeFlag
-//QGraphicsView::CacheModeFlag
 type QGraphicsView__CacheModeFlag int64
 
 const (
@@ -25844,8 +25925,9 @@ const (
 	QGraphicsView__CacheBackground QGraphicsView__CacheModeFlag = QGraphicsView__CacheModeFlag(0x1)
 )
 
+// QGraphicsView::DragMode
+//
 //go:generate stringer -type=QGraphicsView__DragMode
-//QGraphicsView::DragMode
 type QGraphicsView__DragMode int64
 
 const (
@@ -25854,8 +25936,9 @@ const (
 	QGraphicsView__RubberBandDrag QGraphicsView__DragMode = QGraphicsView__DragMode(2)
 )
 
+// QGraphicsView::ViewportUpdateMode
+//
 //go:generate stringer -type=QGraphicsView__ViewportUpdateMode
-//QGraphicsView::ViewportUpdateMode
 type QGraphicsView__ViewportUpdateMode int64
 
 const (
@@ -25866,8 +25949,9 @@ const (
 	QGraphicsView__BoundingRectViewportUpdate QGraphicsView__ViewportUpdateMode = QGraphicsView__ViewportUpdateMode(4)
 )
 
+// QGraphicsView::OptimizationFlag
+//
 //go:generate stringer -type=QGraphicsView__OptimizationFlag
-//QGraphicsView::OptimizationFlag
 type QGraphicsView__OptimizationFlag int64
 
 const (
@@ -26594,8 +26678,9 @@ func NewQGraphicsWidgetFromPointer(ptr unsafe.Pointer) (n *QGraphicsWidget) {
 	return
 }
 
+// QGraphicsWidget::anonymous
+//
 //go:generate stringer -type=QGraphicsWidget__anonymous
-//QGraphicsWidget::anonymous
 type QGraphicsWidget__anonymous int64
 
 const (
@@ -27986,8 +28071,9 @@ func NewQHeaderViewFromPointer(ptr unsafe.Pointer) (n *QHeaderView) {
 	return
 }
 
+// QHeaderView::ResizeMode
+//
 //go:generate stringer -type=QHeaderView__ResizeMode
-//QHeaderView::ResizeMode
 type QHeaderView__ResizeMode int64
 
 const (
@@ -28881,8 +28967,9 @@ func NewQInputDialogFromPointer(ptr unsafe.Pointer) (n *QInputDialog) {
 	return
 }
 
+// QInputDialog::InputDialogOption
+//
 //go:generate stringer -type=QInputDialog__InputDialogOption
-//QInputDialog::InputDialogOption
 type QInputDialog__InputDialogOption int64
 
 const (
@@ -28891,8 +28978,9 @@ const (
 	QInputDialog__UsePlainTextEditForTextInput QInputDialog__InputDialogOption = QInputDialog__InputDialogOption(0x00000004)
 )
 
+// QInputDialog::InputMode
+//
 //go:generate stringer -type=QInputDialog__InputMode
-//QInputDialog::InputMode
 type QInputDialog__InputMode int64
 
 const (
@@ -30318,8 +30406,9 @@ func NewQLCDNumberFromPointer(ptr unsafe.Pointer) (n *QLCDNumber) {
 	return
 }
 
+// QLCDNumber::Mode
+//
 //go:generate stringer -type=QLCDNumber__Mode
-//QLCDNumber::Mode
 type QLCDNumber__Mode int64
 
 const (
@@ -30329,8 +30418,9 @@ const (
 	QLCDNumber__Bin QLCDNumber__Mode = QLCDNumber__Mode(3)
 )
 
+// QLCDNumber::SegmentStyle
+//
 //go:generate stringer -type=QLCDNumber__SegmentStyle
-//QLCDNumber::SegmentStyle
 type QLCDNumber__SegmentStyle int64
 
 var (
@@ -31031,8 +31121,9 @@ func NewQLayoutFromPointer(ptr unsafe.Pointer) (n *QLayout) {
 func (ptr *QLayout) DestroyQLayout() {
 }
 
+// QLayout::SizeConstraint
+//
 //go:generate stringer -type=QLayout__SizeConstraint
-//QLayout::SizeConstraint
 type QLayout__SizeConstraint int64
 
 const (
@@ -31953,8 +32044,9 @@ func NewQLineEditFromPointer(ptr unsafe.Pointer) (n *QLineEdit) {
 	return
 }
 
+// QLineEdit::EchoMode
+//
 //go:generate stringer -type=QLineEdit__EchoMode
-//QLineEdit::EchoMode
 type QLineEdit__EchoMode int64
 
 const (
@@ -31964,8 +32056,9 @@ const (
 	QLineEdit__PasswordEchoOnEdit QLineEdit__EchoMode = QLineEdit__EchoMode(3)
 )
 
+// QLineEdit::ActionPosition
+//
 //go:generate stringer -type=QLineEdit__ActionPosition
-//QLineEdit::ActionPosition
 type QLineEdit__ActionPosition int64
 
 const (
@@ -32611,8 +32704,9 @@ func NewQListViewFromPointer(ptr unsafe.Pointer) (n *QListView) {
 	return
 }
 
+// QListView::Flow
+//
 //go:generate stringer -type=QListView__Flow
-//QListView::Flow
 type QListView__Flow int64
 
 const (
@@ -32620,8 +32714,9 @@ const (
 	QListView__TopToBottom QListView__Flow = QListView__Flow(1)
 )
 
+// QListView::ResizeMode
+//
 //go:generate stringer -type=QListView__ResizeMode
-//QListView::ResizeMode
 type QListView__ResizeMode int64
 
 const (
@@ -32629,8 +32724,9 @@ const (
 	QListView__Adjust QListView__ResizeMode = QListView__ResizeMode(1)
 )
 
+// QListView::LayoutMode
+//
 //go:generate stringer -type=QListView__LayoutMode
-//QListView::LayoutMode
 type QListView__LayoutMode int64
 
 const (
@@ -32638,8 +32734,9 @@ const (
 	QListView__Batched    QListView__LayoutMode = QListView__LayoutMode(1)
 )
 
+// QListView::ViewMode
+//
 //go:generate stringer -type=QListView__ViewMode
-//QListView::ViewMode
 type QListView__ViewMode int64
 
 const (
@@ -32647,8 +32744,9 @@ const (
 	QListView__IconMode QListView__ViewMode = QListView__ViewMode(1)
 )
 
+// QListView::Movement
+//
 //go:generate stringer -type=QListView__Movement
-//QListView::Movement
 type QListView__Movement int64
 
 const (
@@ -33776,8 +33874,9 @@ func NewQListWidgetItemFromPointer(ptr unsafe.Pointer) (n *QListWidgetItem) {
 	return
 }
 
+// QListWidgetItem::ItemType
+//
 //go:generate stringer -type=QListWidgetItem__ItemType
-//QListWidgetItem::ItemType
 type QListWidgetItem__ItemType int64
 
 const (
@@ -34153,8 +34252,9 @@ func NewQMainWindowFromPointer(ptr unsafe.Pointer) (n *QMainWindow) {
 	return
 }
 
+// QMainWindow::DockOption
+//
 //go:generate stringer -type=QMainWindow__DockOption
-//QMainWindow::DockOption
 type QMainWindow__DockOption int64
 
 const (
@@ -34644,16 +34744,18 @@ func NewQMdiAreaFromPointer(ptr unsafe.Pointer) (n *QMdiArea) {
 	return
 }
 
+// QMdiArea::AreaOption
+//
 //go:generate stringer -type=QMdiArea__AreaOption
-//QMdiArea::AreaOption
 type QMdiArea__AreaOption int64
 
 const (
 	QMdiArea__DontMaximizeSubWindowOnActivation QMdiArea__AreaOption = QMdiArea__AreaOption(0x1)
 )
 
+// QMdiArea::WindowOrder
+//
 //go:generate stringer -type=QMdiArea__WindowOrder
-//QMdiArea::WindowOrder
 type QMdiArea__WindowOrder int64
 
 const (
@@ -34662,8 +34764,9 @@ const (
 	QMdiArea__ActivationHistoryOrder QMdiArea__WindowOrder = QMdiArea__WindowOrder(2)
 )
 
+// QMdiArea::ViewMode
+//
 //go:generate stringer -type=QMdiArea__ViewMode
-//QMdiArea::ViewMode
 type QMdiArea__ViewMode int64
 
 const (
@@ -35049,8 +35152,9 @@ func NewQMdiSubWindowFromPointer(ptr unsafe.Pointer) (n *QMdiSubWindow) {
 	return
 }
 
+// QMdiSubWindow::SubWindowOption
+//
 //go:generate stringer -type=QMdiSubWindow__SubWindowOption
-//QMdiSubWindow::SubWindowOption
 type QMdiSubWindow__SubWindowOption int64
 
 const (
@@ -35842,8 +35946,9 @@ func NewQMessageBoxFromPointer(ptr unsafe.Pointer) (n *QMessageBox) {
 	return
 }
 
+// QMessageBox::Icon
+//
 //go:generate stringer -type=QMessageBox__Icon
-//QMessageBox::Icon
 type QMessageBox__Icon int64
 
 const (
@@ -35854,8 +35959,9 @@ const (
 	QMessageBox__Question    QMessageBox__Icon = QMessageBox__Icon(4)
 )
 
+// QMessageBox::ButtonRole
+//
 //go:generate stringer -type=QMessageBox__ButtonRole
-//QMessageBox::ButtonRole
 type QMessageBox__ButtonRole int64
 
 const (
@@ -35872,8 +35978,9 @@ const (
 	QMessageBox__NRoles          QMessageBox__ButtonRole = QMessageBox__ButtonRole(9)
 )
 
+// QMessageBox::StandardButton
+//
 //go:generate stringer -type=QMessageBox__StandardButton
-//QMessageBox::StandardButton
 type QMessageBox__StandardButton int64
 
 var (
@@ -36516,8 +36623,9 @@ func NewQOpenGLWidgetFromPointer(ptr unsafe.Pointer) (n *QOpenGLWidget) {
 	return
 }
 
+// QOpenGLWidget::UpdateBehavior
+//
 //go:generate stringer -type=QOpenGLWidget__UpdateBehavior
-//QOpenGLWidget::UpdateBehavior
 type QOpenGLWidget__UpdateBehavior int64
 
 const (
@@ -36880,8 +36988,9 @@ func NewQPinchGestureFromPointer(ptr unsafe.Pointer) (n *QPinchGesture) {
 	return
 }
 
+// QPinchGesture::ChangeFlag
+//
 //go:generate stringer -type=QPinchGesture__ChangeFlag
-//QPinchGesture::ChangeFlag
 type QPinchGesture__ChangeFlag int64
 
 const (
@@ -37400,8 +37509,9 @@ func NewQPlainTextEditFromPointer(ptr unsafe.Pointer) (n *QPlainTextEdit) {
 	return
 }
 
+// QPlainTextEdit::LineWrapMode
+//
 //go:generate stringer -type=QPlainTextEdit__LineWrapMode
-//QPlainTextEdit::LineWrapMode
 type QPlainTextEdit__LineWrapMode int64
 
 const (
@@ -38262,8 +38372,9 @@ func NewQProgressBarFromPointer(ptr unsafe.Pointer) (n *QProgressBar) {
 	return
 }
 
+// QProgressBar::Direction
+//
 //go:generate stringer -type=QProgressBar__Direction
-//QProgressBar::Direction
 type QProgressBar__Direction int64
 
 const (
@@ -39317,8 +39428,9 @@ func NewQRubberBandFromPointer(ptr unsafe.Pointer) (n *QRubberBand) {
 	return
 }
 
+// QRubberBand::Shape
+//
 //go:generate stringer -type=QRubberBand__Shape
-//QRubberBand::Shape
 type QRubberBand__Shape int64
 
 const (
@@ -39611,8 +39723,9 @@ func NewQScrollerFromPointer(ptr unsafe.Pointer) (n *QScroller) {
 func (ptr *QScroller) DestroyQScroller() {
 }
 
+// QScroller::State
+//
 //go:generate stringer -type=QScroller__State
-//QScroller::State
 type QScroller__State int64
 
 const (
@@ -39622,8 +39735,9 @@ const (
 	QScroller__Scrolling QScroller__State = QScroller__State(3)
 )
 
+// QScroller::ScrollerGestureType
+//
 //go:generate stringer -type=QScroller__ScrollerGestureType
-//QScroller::ScrollerGestureType
 type QScroller__ScrollerGestureType int64
 
 const (
@@ -39633,8 +39747,9 @@ const (
 	QScroller__MiddleMouseButtonGesture QScroller__ScrollerGestureType = QScroller__ScrollerGestureType(3)
 )
 
+// QScroller::Input
+//
 //go:generate stringer -type=QScroller__Input
-//QScroller::Input
 type QScroller__Input int64
 
 const (
@@ -40115,8 +40230,9 @@ func NewQScrollerPropertiesFromPointer(ptr unsafe.Pointer) (n *QScrollerProperti
 	return
 }
 
+// QScrollerProperties::OvershootPolicy
+//
 //go:generate stringer -type=QScrollerProperties__OvershootPolicy
-//QScrollerProperties::OvershootPolicy
 type QScrollerProperties__OvershootPolicy int64
 
 const (
@@ -40125,8 +40241,9 @@ const (
 	QScrollerProperties__OvershootAlwaysOn       QScrollerProperties__OvershootPolicy = QScrollerProperties__OvershootPolicy(2)
 )
 
+// QScrollerProperties::FrameRates
+//
 //go:generate stringer -type=QScrollerProperties__FrameRates
-//QScrollerProperties::FrameRates
 type QScrollerProperties__FrameRates int64
 
 const (
@@ -40136,8 +40253,9 @@ const (
 	QScrollerProperties__Fps20    QScrollerProperties__FrameRates = QScrollerProperties__FrameRates(3)
 )
 
+// QScrollerProperties::ScrollMetric
+//
 //go:generate stringer -type=QScrollerProperties__ScrollMetric
-//QScrollerProperties::ScrollMetric
 type QScrollerProperties__ScrollMetric int64
 
 const (
@@ -40633,8 +40751,9 @@ func NewQSizePolicyFromPointer(ptr unsafe.Pointer) (n *QSizePolicy) {
 func (ptr *QSizePolicy) DestroyQSizePolicy() {
 }
 
+// QSizePolicy::PolicyFlag
+//
 //go:generate stringer -type=QSizePolicy__PolicyFlag
-//QSizePolicy::PolicyFlag
 type QSizePolicy__PolicyFlag int64
 
 const (
@@ -40644,8 +40763,9 @@ const (
 	QSizePolicy__IgnoreFlag QSizePolicy__PolicyFlag = QSizePolicy__PolicyFlag(8)
 )
 
+// QSizePolicy::Policy
+//
 //go:generate stringer -type=QSizePolicy__Policy
-//QSizePolicy::Policy
 type QSizePolicy__Policy int64
 
 const (
@@ -40658,8 +40778,9 @@ const (
 	QSizePolicy__Ignored          QSizePolicy__Policy = QSizePolicy__Policy(QSizePolicy__ShrinkFlag | QSizePolicy__GrowFlag | QSizePolicy__IgnoreFlag)
 )
 
+// QSizePolicy::ControlType
+//
 //go:generate stringer -type=QSizePolicy__ControlType
-//QSizePolicy::ControlType
 type QSizePolicy__ControlType int64
 
 const (
@@ -40833,8 +40954,9 @@ func NewQSliderFromPointer(ptr unsafe.Pointer) (n *QSlider) {
 	return
 }
 
+// QSlider::TickPosition
+//
 //go:generate stringer -type=QSlider__TickPosition
-//QSlider::TickPosition
 type QSlider__TickPosition int64
 
 const (
@@ -41974,8 +42096,9 @@ func NewQStackedLayoutFromPointer(ptr unsafe.Pointer) (n *QStackedLayout) {
 	return
 }
 
+// QStackedLayout::StackingMode
+//
 //go:generate stringer -type=QStackedLayout__StackingMode
-//QStackedLayout::StackingMode
 type QStackedLayout__StackingMode int64
 
 const (
@@ -42681,8 +42804,9 @@ func NewQStyleFromPointer(ptr unsafe.Pointer) (n *QStyle) {
 	return
 }
 
+// QStyle::StateFlag
+//
 //go:generate stringer -type=QStyle__StateFlag
-//QStyle::StateFlag
 type QStyle__StateFlag int64
 
 const (
@@ -42717,8 +42841,9 @@ const (
 	QStyle__State_Mini                QStyle__StateFlag = QStyle__StateFlag(0x08000000)
 )
 
+// QStyle::PrimitiveElement
+//
 //go:generate stringer -type=QStyle__PrimitiveElement
-//QStyle::PrimitiveElement
 type QStyle__PrimitiveElement int64
 
 const (
@@ -42778,8 +42903,9 @@ const (
 	QStyle__PE_CustomBase                      QStyle__PrimitiveElement = QStyle__PrimitiveElement(0xf000000)
 )
 
+// QStyle::ControlElement
+//
 //go:generate stringer -type=QStyle__ControlElement
-//QStyle::ControlElement
 type QStyle__ControlElement int64
 
 const (
@@ -42833,8 +42959,9 @@ const (
 	QStyle__CE_CustomBase          QStyle__ControlElement = QStyle__ControlElement(0xf0000000)
 )
 
+// QStyle::SubElement
+//
 //go:generate stringer -type=QStyle__SubElement
-//QStyle::SubElement
 type QStyle__SubElement int64
 
 const (
@@ -42900,8 +43027,9 @@ const (
 	QStyle__SE_CustomBase                 QStyle__SubElement = QStyle__SubElement(0xf0000000)
 )
 
+// QStyle::ComplexControl
+//
 //go:generate stringer -type=QStyle__ComplexControl
-//QStyle::ComplexControl
 type QStyle__ComplexControl int64
 
 const (
@@ -42917,8 +43045,9 @@ const (
 	QStyle__CC_CustomBase  QStyle__ComplexControl = QStyle__ComplexControl(0xf0000000)
 )
 
+// QStyle::SubControl
+//
 //go:generate stringer -type=QStyle__SubControl
-//QStyle::SubControl
 type QStyle__SubControl int64
 
 const (
@@ -42967,8 +43096,9 @@ const (
 	QStyle__SC_All                       QStyle__SubControl = QStyle__SubControl(0xffffffff)
 )
 
+// QStyle::PixelMetric
+//
 //go:generate stringer -type=QStyle__PixelMetric
-//QStyle::PixelMetric
 type QStyle__PixelMetric int64
 
 const (
@@ -43073,8 +43203,9 @@ const (
 	QStyle__PM_CustomBase                         QStyle__PixelMetric = QStyle__PixelMetric(0xf0000000)
 )
 
+// QStyle::ContentsType
+//
 //go:generate stringer -type=QStyle__ContentsType
-//QStyle::ContentsType
 type QStyle__ContentsType int64
 
 const (
@@ -43104,8 +43235,9 @@ const (
 	QStyle__CT_CustomBase    QStyle__ContentsType = QStyle__ContentsType(0xf0000000)
 )
 
+// QStyle::RequestSoftwareInputPanel
+//
 //go:generate stringer -type=QStyle__RequestSoftwareInputPanel
-//QStyle::RequestSoftwareInputPanel
 type QStyle__RequestSoftwareInputPanel int64
 
 const (
@@ -43113,8 +43245,9 @@ const (
 	QStyle__RSIP_OnMouseClick                  QStyle__RequestSoftwareInputPanel = QStyle__RequestSoftwareInputPanel(1)
 )
 
+// QStyle::StyleHint
+//
 //go:generate stringer -type=QStyle__StyleHint
-//QStyle::StyleHint
 type QStyle__StyleHint int64
 
 var (
@@ -43240,8 +43373,9 @@ var (
 	QStyle__SH_CustomBase                                     QStyle__StyleHint = QStyle__StyleHint(0xf0000000)
 )
 
+// QStyle::StandardPixmap
+//
 //go:generate stringer -type=QStyle__StandardPixmap
-//QStyle::StandardPixmap
 type QStyle__StandardPixmap int64
 
 const (
@@ -44024,8 +44158,9 @@ func NewQStyleHintReturnFromPointer(ptr unsafe.Pointer) (n *QStyleHintReturn) {
 func (ptr *QStyleHintReturn) DestroyQStyleHintReturn() {
 }
 
+// QStyleHintReturn::HintReturnType
+//
 //go:generate stringer -type=QStyleHintReturn__HintReturnType
-//QStyleHintReturn::HintReturnType
 type QStyleHintReturn__HintReturnType int64
 
 const (
@@ -44034,16 +44169,18 @@ const (
 	QStyleHintReturn__SH_Variant QStyleHintReturn__HintReturnType = QStyleHintReturn__HintReturnType(0xf002)
 )
 
+// QStyleHintReturn::StyleOptionType
+//
 //go:generate stringer -type=QStyleHintReturn__StyleOptionType
-//QStyleHintReturn::StyleOptionType
 type QStyleHintReturn__StyleOptionType int64
 
 var (
 	QStyleHintReturn__Type QStyleHintReturn__StyleOptionType = QStyleHintReturn__StyleOptionType(QStyleHintReturn__SH_Default)
 )
 
+// QStyleHintReturn::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleHintReturn__StyleOptionVersion
-//QStyleHintReturn::StyleOptionVersion
 type QStyleHintReturn__StyleOptionVersion int64
 
 var (
@@ -44123,16 +44260,18 @@ func NewQStyleHintReturnMaskFromPointer(ptr unsafe.Pointer) (n *QStyleHintReturn
 	return
 }
 
+// QStyleHintReturnMask::StyleOptionType
+//
 //go:generate stringer -type=QStyleHintReturnMask__StyleOptionType
-//QStyleHintReturnMask::StyleOptionType
 type QStyleHintReturnMask__StyleOptionType int64
 
 var (
 	QStyleHintReturnMask__Type QStyleHintReturnMask__StyleOptionType = QStyleHintReturnMask__StyleOptionType(QStyleHintReturn__SH_Mask)
 )
 
+// QStyleHintReturnMask::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleHintReturnMask__StyleOptionVersion
-//QStyleHintReturnMask::StyleOptionVersion
 type QStyleHintReturnMask__StyleOptionVersion int64
 
 var (
@@ -44207,16 +44346,18 @@ func NewQStyleHintReturnVariantFromPointer(ptr unsafe.Pointer) (n *QStyleHintRet
 	return
 }
 
+// QStyleHintReturnVariant::StyleOptionType
+//
 //go:generate stringer -type=QStyleHintReturnVariant__StyleOptionType
-//QStyleHintReturnVariant::StyleOptionType
 type QStyleHintReturnVariant__StyleOptionType int64
 
 var (
 	QStyleHintReturnVariant__Type QStyleHintReturnVariant__StyleOptionType = QStyleHintReturnVariant__StyleOptionType(QStyleHintReturn__SH_Variant)
 )
 
+// QStyleHintReturnVariant::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleHintReturnVariant__StyleOptionVersion
-//QStyleHintReturnVariant::StyleOptionVersion
 type QStyleHintReturnVariant__StyleOptionVersion int64
 
 var (
@@ -44285,8 +44426,9 @@ func NewQStyleOptionFromPointer(ptr unsafe.Pointer) (n *QStyleOption) {
 	return
 }
 
+// QStyleOption::OptionType
+//
 //go:generate stringer -type=QStyleOption__OptionType
-//QStyleOption::OptionType
 type QStyleOption__OptionType int64
 
 const (
@@ -44318,16 +44460,18 @@ const (
 	QStyleOption__SO_ComplexCustomBase QStyleOption__OptionType = QStyleOption__OptionType(0xf000000)
 )
 
+// QStyleOption::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOption__StyleOptionVersion
-//QStyleOption::StyleOptionVersion
 type QStyleOption__StyleOptionVersion int64
 
 var (
 	QStyleOption__Version QStyleOption__StyleOptionVersion = QStyleOption__StyleOptionVersion(1)
 )
 
+// QStyleOption::StyleOptionType
+//
 //go:generate stringer -type=QStyleOption__StyleOptionType
-//QStyleOption::StyleOptionType
 type QStyleOption__StyleOptionType int64
 
 var (
@@ -44485,24 +44629,27 @@ func NewQStyleOptionButtonFromPointer(ptr unsafe.Pointer) (n *QStyleOptionButton
 func (ptr *QStyleOptionButton) DestroyQStyleOptionButton() {
 }
 
+// QStyleOptionButton::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionButton__StyleOptionType
-//QStyleOptionButton::StyleOptionType
 type QStyleOptionButton__StyleOptionType int64
 
 var (
 	QStyleOptionButton__Type QStyleOptionButton__StyleOptionType = QStyleOptionButton__StyleOptionType(QStyleOption__SO_Button)
 )
 
+// QStyleOptionButton::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionButton__StyleOptionVersion
-//QStyleOptionButton::StyleOptionVersion
 type QStyleOptionButton__StyleOptionVersion int64
 
 var (
 	QStyleOptionButton__Version QStyleOptionButton__StyleOptionVersion = QStyleOptionButton__StyleOptionVersion(1)
 )
 
+// QStyleOptionButton::ButtonFeature
+//
 //go:generate stringer -type=QStyleOptionButton__ButtonFeature
-//QStyleOptionButton::ButtonFeature
 type QStyleOptionButton__ButtonFeature int64
 
 const (
@@ -44615,16 +44762,18 @@ func NewQStyleOptionComboBoxFromPointer(ptr unsafe.Pointer) (n *QStyleOptionComb
 func (ptr *QStyleOptionComboBox) DestroyQStyleOptionComboBox() {
 }
 
+// QStyleOptionComboBox::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionComboBox__StyleOptionType
-//QStyleOptionComboBox::StyleOptionType
 type QStyleOptionComboBox__StyleOptionType int64
 
 var (
 	QStyleOptionComboBox__Type QStyleOptionComboBox__StyleOptionType = QStyleOptionComboBox__StyleOptionType(QStyleOption__SO_ComboBox)
 )
 
+// QStyleOptionComboBox::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionComboBox__StyleOptionVersion
-//QStyleOptionComboBox::StyleOptionVersion
 type QStyleOptionComboBox__StyleOptionVersion int64
 
 var (
@@ -44752,16 +44901,18 @@ func NewQStyleOptionComplexFromPointer(ptr unsafe.Pointer) (n *QStyleOptionCompl
 func (ptr *QStyleOptionComplex) DestroyQStyleOptionComplex() {
 }
 
+// QStyleOptionComplex::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionComplex__StyleOptionType
-//QStyleOptionComplex::StyleOptionType
 type QStyleOptionComplex__StyleOptionType int64
 
 var (
 	QStyleOptionComplex__Type QStyleOptionComplex__StyleOptionType = QStyleOptionComplex__StyleOptionType(QStyleOption__SO_Complex)
 )
 
+// QStyleOptionComplex::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionComplex__StyleOptionVersion
-//QStyleOptionComplex::StyleOptionVersion
 type QStyleOptionComplex__StyleOptionVersion int64
 
 var (
@@ -44849,16 +45000,18 @@ func NewQStyleOptionDockWidgetFromPointer(ptr unsafe.Pointer) (n *QStyleOptionDo
 func (ptr *QStyleOptionDockWidget) DestroyQStyleOptionDockWidget() {
 }
 
+// QStyleOptionDockWidget::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionDockWidget__StyleOptionType
-//QStyleOptionDockWidget::StyleOptionType
 type QStyleOptionDockWidget__StyleOptionType int64
 
 var (
 	QStyleOptionDockWidget__Type QStyleOptionDockWidget__StyleOptionType = QStyleOptionDockWidget__StyleOptionType(QStyleOption__SO_DockWidget)
 )
 
+// QStyleOptionDockWidget::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionDockWidget__StyleOptionVersion
-//QStyleOptionDockWidget::StyleOptionVersion
 type QStyleOptionDockWidget__StyleOptionVersion int64
 
 var (
@@ -44966,16 +45119,18 @@ func NewQStyleOptionFocusRectFromPointer(ptr unsafe.Pointer) (n *QStyleOptionFoc
 func (ptr *QStyleOptionFocusRect) DestroyQStyleOptionFocusRect() {
 }
 
+// QStyleOptionFocusRect::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionFocusRect__StyleOptionType
-//QStyleOptionFocusRect::StyleOptionType
 type QStyleOptionFocusRect__StyleOptionType int64
 
 var (
 	QStyleOptionFocusRect__Type QStyleOptionFocusRect__StyleOptionType = QStyleOptionFocusRect__StyleOptionType(QStyleOption__SO_FocusRect)
 )
 
+// QStyleOptionFocusRect::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionFocusRect__StyleOptionVersion
-//QStyleOptionFocusRect::StyleOptionVersion
 type QStyleOptionFocusRect__StyleOptionVersion int64
 
 var (
@@ -45053,24 +45208,27 @@ func NewQStyleOptionFrameFromPointer(ptr unsafe.Pointer) (n *QStyleOptionFrame) 
 func (ptr *QStyleOptionFrame) DestroyQStyleOptionFrame() {
 }
 
+// QStyleOptionFrame::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionFrame__StyleOptionType
-//QStyleOptionFrame::StyleOptionType
 type QStyleOptionFrame__StyleOptionType int64
 
 var (
 	QStyleOptionFrame__Type QStyleOptionFrame__StyleOptionType = QStyleOptionFrame__StyleOptionType(QStyleOption__SO_Frame)
 )
 
+// QStyleOptionFrame::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionFrame__StyleOptionVersion
-//QStyleOptionFrame::StyleOptionVersion
 type QStyleOptionFrame__StyleOptionVersion int64
 
 var (
 	QStyleOptionFrame__Version QStyleOptionFrame__StyleOptionVersion = QStyleOptionFrame__StyleOptionVersion(3)
 )
 
+// QStyleOptionFrame::FrameFeature
+//
 //go:generate stringer -type=QStyleOptionFrame__FrameFeature
-//QStyleOptionFrame::FrameFeature
 type QStyleOptionFrame__FrameFeature int64
 
 const (
@@ -45180,16 +45338,18 @@ func NewQStyleOptionGraphicsItemFromPointer(ptr unsafe.Pointer) (n *QStyleOption
 func (ptr *QStyleOptionGraphicsItem) DestroyQStyleOptionGraphicsItem() {
 }
 
+// QStyleOptionGraphicsItem::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionGraphicsItem__StyleOptionType
-//QStyleOptionGraphicsItem::StyleOptionType
 type QStyleOptionGraphicsItem__StyleOptionType int64
 
 var (
 	QStyleOptionGraphicsItem__Type QStyleOptionGraphicsItem__StyleOptionType = QStyleOptionGraphicsItem__StyleOptionType(QStyleOption__SO_GraphicsItem)
 )
 
+// QStyleOptionGraphicsItem::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionGraphicsItem__StyleOptionVersion
-//QStyleOptionGraphicsItem::StyleOptionVersion
 type QStyleOptionGraphicsItem__StyleOptionVersion int64
 
 var (
@@ -45277,16 +45437,18 @@ func NewQStyleOptionGroupBoxFromPointer(ptr unsafe.Pointer) (n *QStyleOptionGrou
 func (ptr *QStyleOptionGroupBox) DestroyQStyleOptionGroupBox() {
 }
 
+// QStyleOptionGroupBox::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionGroupBox__StyleOptionType
-//QStyleOptionGroupBox::StyleOptionType
 type QStyleOptionGroupBox__StyleOptionType int64
 
 var (
 	QStyleOptionGroupBox__Type QStyleOptionGroupBox__StyleOptionType = QStyleOptionGroupBox__StyleOptionType(QStyleOption__SO_GroupBox)
 )
 
+// QStyleOptionGroupBox::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionGroupBox__StyleOptionVersion
-//QStyleOptionGroupBox::StyleOptionVersion
 type QStyleOptionGroupBox__StyleOptionVersion int64
 
 var (
@@ -45414,24 +45576,27 @@ func NewQStyleOptionHeaderFromPointer(ptr unsafe.Pointer) (n *QStyleOptionHeader
 func (ptr *QStyleOptionHeader) DestroyQStyleOptionHeader() {
 }
 
+// QStyleOptionHeader::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionHeader__StyleOptionType
-//QStyleOptionHeader::StyleOptionType
 type QStyleOptionHeader__StyleOptionType int64
 
 var (
 	QStyleOptionHeader__Type QStyleOptionHeader__StyleOptionType = QStyleOptionHeader__StyleOptionType(QStyleOption__SO_Header)
 )
 
+// QStyleOptionHeader::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionHeader__StyleOptionVersion
-//QStyleOptionHeader::StyleOptionVersion
 type QStyleOptionHeader__StyleOptionVersion int64
 
 var (
 	QStyleOptionHeader__Version QStyleOptionHeader__StyleOptionVersion = QStyleOptionHeader__StyleOptionVersion(1)
 )
 
+// QStyleOptionHeader::SectionPosition
+//
 //go:generate stringer -type=QStyleOptionHeader__SectionPosition
-//QStyleOptionHeader::SectionPosition
 type QStyleOptionHeader__SectionPosition int64
 
 const (
@@ -45441,8 +45606,9 @@ const (
 	QStyleOptionHeader__OnlyOneSection QStyleOptionHeader__SectionPosition = QStyleOptionHeader__SectionPosition(3)
 )
 
+// QStyleOptionHeader::SelectedPosition
+//
 //go:generate stringer -type=QStyleOptionHeader__SelectedPosition
-//QStyleOptionHeader::SelectedPosition
 type QStyleOptionHeader__SelectedPosition int64
 
 const (
@@ -45452,8 +45618,9 @@ const (
 	QStyleOptionHeader__NextAndPreviousAreSelected QStyleOptionHeader__SelectedPosition = QStyleOptionHeader__SelectedPosition(3)
 )
 
+// QStyleOptionHeader::SortIndicator
+//
 //go:generate stringer -type=QStyleOptionHeader__SortIndicator
-//QStyleOptionHeader::SortIndicator
 type QStyleOptionHeader__SortIndicator int64
 
 const (
@@ -45613,24 +45780,27 @@ func NewQStyleOptionMenuItemFromPointer(ptr unsafe.Pointer) (n *QStyleOptionMenu
 func (ptr *QStyleOptionMenuItem) DestroyQStyleOptionMenuItem() {
 }
 
+// QStyleOptionMenuItem::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionMenuItem__StyleOptionType
-//QStyleOptionMenuItem::StyleOptionType
 type QStyleOptionMenuItem__StyleOptionType int64
 
 var (
 	QStyleOptionMenuItem__Type QStyleOptionMenuItem__StyleOptionType = QStyleOptionMenuItem__StyleOptionType(QStyleOption__SO_MenuItem)
 )
 
+// QStyleOptionMenuItem::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionMenuItem__StyleOptionVersion
-//QStyleOptionMenuItem::StyleOptionVersion
 type QStyleOptionMenuItem__StyleOptionVersion int64
 
 var (
 	QStyleOptionMenuItem__Version QStyleOptionMenuItem__StyleOptionVersion = QStyleOptionMenuItem__StyleOptionVersion(1)
 )
 
+// QStyleOptionMenuItem::MenuItemType
+//
 //go:generate stringer -type=QStyleOptionMenuItem__MenuItemType
-//QStyleOptionMenuItem::MenuItemType
 type QStyleOptionMenuItem__MenuItemType int64
 
 const (
@@ -45644,8 +45814,9 @@ const (
 	QStyleOptionMenuItem__EmptyArea   QStyleOptionMenuItem__MenuItemType = QStyleOptionMenuItem__MenuItemType(7)
 )
 
+// QStyleOptionMenuItem::CheckType
+//
 //go:generate stringer -type=QStyleOptionMenuItem__CheckType
-//QStyleOptionMenuItem::CheckType
 type QStyleOptionMenuItem__CheckType int64
 
 const (
@@ -45815,16 +45986,18 @@ func NewQStyleOptionProgressBarFromPointer(ptr unsafe.Pointer) (n *QStyleOptionP
 func (ptr *QStyleOptionProgressBar) DestroyQStyleOptionProgressBar() {
 }
 
+// QStyleOptionProgressBar::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionProgressBar__StyleOptionType
-//QStyleOptionProgressBar::StyleOptionType
 type QStyleOptionProgressBar__StyleOptionType int64
 
 var (
 	QStyleOptionProgressBar__Type QStyleOptionProgressBar__StyleOptionType = QStyleOptionProgressBar__StyleOptionType(QStyleOption__SO_ProgressBar)
 )
 
+// QStyleOptionProgressBar::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionProgressBar__StyleOptionVersion
-//QStyleOptionProgressBar::StyleOptionVersion
 type QStyleOptionProgressBar__StyleOptionVersion int64
 
 var (
@@ -45972,16 +46145,18 @@ func NewQStyleOptionRubberBandFromPointer(ptr unsafe.Pointer) (n *QStyleOptionRu
 func (ptr *QStyleOptionRubberBand) DestroyQStyleOptionRubberBand() {
 }
 
+// QStyleOptionRubberBand::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionRubberBand__StyleOptionType
-//QStyleOptionRubberBand::StyleOptionType
 type QStyleOptionRubberBand__StyleOptionType int64
 
 var (
 	QStyleOptionRubberBand__Type QStyleOptionRubberBand__StyleOptionType = QStyleOptionRubberBand__StyleOptionType(QStyleOption__SO_RubberBand)
 )
 
+// QStyleOptionRubberBand::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionRubberBand__StyleOptionVersion
-//QStyleOptionRubberBand::StyleOptionVersion
 type QStyleOptionRubberBand__StyleOptionVersion int64
 
 var (
@@ -46069,16 +46244,18 @@ func NewQStyleOptionSizeGripFromPointer(ptr unsafe.Pointer) (n *QStyleOptionSize
 func (ptr *QStyleOptionSizeGrip) DestroyQStyleOptionSizeGrip() {
 }
 
+// QStyleOptionSizeGrip::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionSizeGrip__StyleOptionType
-//QStyleOptionSizeGrip::StyleOptionType
 type QStyleOptionSizeGrip__StyleOptionType int64
 
 var (
 	QStyleOptionSizeGrip__Type QStyleOptionSizeGrip__StyleOptionType = QStyleOptionSizeGrip__StyleOptionType(QStyleOption__SO_SizeGrip)
 )
 
+// QStyleOptionSizeGrip::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionSizeGrip__StyleOptionVersion
-//QStyleOptionSizeGrip::StyleOptionVersion
 type QStyleOptionSizeGrip__StyleOptionVersion int64
 
 var (
@@ -46156,16 +46333,18 @@ func NewQStyleOptionSliderFromPointer(ptr unsafe.Pointer) (n *QStyleOptionSlider
 func (ptr *QStyleOptionSlider) DestroyQStyleOptionSlider() {
 }
 
+// QStyleOptionSlider::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionSlider__StyleOptionType
-//QStyleOptionSlider::StyleOptionType
 type QStyleOptionSlider__StyleOptionType int64
 
 var (
 	QStyleOptionSlider__Type QStyleOptionSlider__StyleOptionType = QStyleOptionSlider__StyleOptionType(QStyleOption__SO_Slider)
 )
 
+// QStyleOptionSlider::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionSlider__StyleOptionVersion
-//QStyleOptionSlider::StyleOptionVersion
 type QStyleOptionSlider__StyleOptionVersion int64
 
 var (
@@ -46353,16 +46532,18 @@ func NewQStyleOptionSpinBoxFromPointer(ptr unsafe.Pointer) (n *QStyleOptionSpinB
 func (ptr *QStyleOptionSpinBox) DestroyQStyleOptionSpinBox() {
 }
 
+// QStyleOptionSpinBox::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionSpinBox__StyleOptionVersion
-//QStyleOptionSpinBox::StyleOptionVersion
 type QStyleOptionSpinBox__StyleOptionVersion int64
 
 var (
 	QStyleOptionSpinBox__Version QStyleOptionSpinBox__StyleOptionVersion = QStyleOptionSpinBox__StyleOptionVersion(1)
 )
 
+// QStyleOptionSpinBox::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionSpinBox__StyleOptionType
-//QStyleOptionSpinBox::StyleOptionType
 type QStyleOptionSpinBox__StyleOptionType int64
 
 var (
@@ -46460,24 +46641,27 @@ func NewQStyleOptionTabFromPointer(ptr unsafe.Pointer) (n *QStyleOptionTab) {
 func (ptr *QStyleOptionTab) DestroyQStyleOptionTab() {
 }
 
+// QStyleOptionTab::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionTab__StyleOptionType
-//QStyleOptionTab::StyleOptionType
 type QStyleOptionTab__StyleOptionType int64
 
 var (
 	QStyleOptionTab__Type QStyleOptionTab__StyleOptionType = QStyleOptionTab__StyleOptionType(QStyleOption__SO_Tab)
 )
 
+// QStyleOptionTab::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionTab__StyleOptionVersion
-//QStyleOptionTab::StyleOptionVersion
 type QStyleOptionTab__StyleOptionVersion int64
 
 var (
 	QStyleOptionTab__Version QStyleOptionTab__StyleOptionVersion = QStyleOptionTab__StyleOptionVersion(3)
 )
 
+// QStyleOptionTab::TabPosition
+//
 //go:generate stringer -type=QStyleOptionTab__TabPosition
-//QStyleOptionTab::TabPosition
 type QStyleOptionTab__TabPosition int64
 
 const (
@@ -46487,8 +46671,9 @@ const (
 	QStyleOptionTab__OnlyOneTab QStyleOptionTab__TabPosition = QStyleOptionTab__TabPosition(3)
 )
 
+// QStyleOptionTab::SelectedPosition
+//
 //go:generate stringer -type=QStyleOptionTab__SelectedPosition
-//QStyleOptionTab::SelectedPosition
 type QStyleOptionTab__SelectedPosition int64
 
 const (
@@ -46497,8 +46682,9 @@ const (
 	QStyleOptionTab__PreviousIsSelected QStyleOptionTab__SelectedPosition = QStyleOptionTab__SelectedPosition(2)
 )
 
+// QStyleOptionTab::CornerWidget
+//
 //go:generate stringer -type=QStyleOptionTab__CornerWidget
-//QStyleOptionTab::CornerWidget
 type QStyleOptionTab__CornerWidget int64
 
 const (
@@ -46507,8 +46693,9 @@ const (
 	QStyleOptionTab__RightCornerWidget QStyleOptionTab__CornerWidget = QStyleOptionTab__CornerWidget(0x02)
 )
 
+// QStyleOptionTab::TabFeature
+//
 //go:generate stringer -type=QStyleOptionTab__TabFeature
-//QStyleOptionTab::TabFeature
 type QStyleOptionTab__TabFeature int64
 
 const (
@@ -46687,16 +46874,18 @@ func NewQStyleOptionTabBarBaseFromPointer(ptr unsafe.Pointer) (n *QStyleOptionTa
 func (ptr *QStyleOptionTabBarBase) DestroyQStyleOptionTabBarBase() {
 }
 
+// QStyleOptionTabBarBase::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionTabBarBase__StyleOptionType
-//QStyleOptionTabBarBase::StyleOptionType
 type QStyleOptionTabBarBase__StyleOptionType int64
 
 var (
 	QStyleOptionTabBarBase__Type QStyleOptionTabBarBase__StyleOptionType = QStyleOptionTabBarBase__StyleOptionType(QStyleOption__SO_TabBarBase)
 )
 
+// QStyleOptionTabBarBase::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionTabBarBase__StyleOptionVersion
-//QStyleOptionTabBarBase::StyleOptionVersion
 type QStyleOptionTabBarBase__StyleOptionVersion int64
 
 var (
@@ -46804,16 +46993,18 @@ func NewQStyleOptionTabWidgetFrameFromPointer(ptr unsafe.Pointer) (n *QStyleOpti
 func (ptr *QStyleOptionTabWidgetFrame) DestroyQStyleOptionTabWidgetFrame() {
 }
 
+// QStyleOptionTabWidgetFrame::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionTabWidgetFrame__StyleOptionType
-//QStyleOptionTabWidgetFrame::StyleOptionType
 type QStyleOptionTabWidgetFrame__StyleOptionType int64
 
 var (
 	QStyleOptionTabWidgetFrame__Type QStyleOptionTabWidgetFrame__StyleOptionType = QStyleOptionTabWidgetFrame__StyleOptionType(QStyleOption__SO_TabWidgetFrame)
 )
 
+// QStyleOptionTabWidgetFrame::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionTabWidgetFrame__StyleOptionVersion
-//QStyleOptionTabWidgetFrame::StyleOptionVersion
 type QStyleOptionTabWidgetFrame__StyleOptionVersion int64
 
 var (
@@ -46961,16 +47152,18 @@ func NewQStyleOptionTitleBarFromPointer(ptr unsafe.Pointer) (n *QStyleOptionTitl
 func (ptr *QStyleOptionTitleBar) DestroyQStyleOptionTitleBar() {
 }
 
+// QStyleOptionTitleBar::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionTitleBar__StyleOptionVersion
-//QStyleOptionTitleBar::StyleOptionVersion
 type QStyleOptionTitleBar__StyleOptionVersion int64
 
 var (
 	QStyleOptionTitleBar__Version QStyleOptionTitleBar__StyleOptionVersion = QStyleOptionTitleBar__StyleOptionVersion(1)
 )
 
+// QStyleOptionTitleBar::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionTitleBar__StyleOptionType
-//QStyleOptionTitleBar::StyleOptionType
 type QStyleOptionTitleBar__StyleOptionType int64
 
 var (
@@ -47078,24 +47271,27 @@ func NewQStyleOptionToolBarFromPointer(ptr unsafe.Pointer) (n *QStyleOptionToolB
 func (ptr *QStyleOptionToolBar) DestroyQStyleOptionToolBar() {
 }
 
+// QStyleOptionToolBar::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionToolBar__StyleOptionType
-//QStyleOptionToolBar::StyleOptionType
 type QStyleOptionToolBar__StyleOptionType int64
 
 var (
 	QStyleOptionToolBar__Type QStyleOptionToolBar__StyleOptionType = QStyleOptionToolBar__StyleOptionType(QStyleOption__SO_ToolBar)
 )
 
+// QStyleOptionToolBar::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionToolBar__StyleOptionVersion
-//QStyleOptionToolBar::StyleOptionVersion
 type QStyleOptionToolBar__StyleOptionVersion int64
 
 var (
 	QStyleOptionToolBar__Version QStyleOptionToolBar__StyleOptionVersion = QStyleOptionToolBar__StyleOptionVersion(1)
 )
 
+// QStyleOptionToolBar::ToolBarPosition
+//
 //go:generate stringer -type=QStyleOptionToolBar__ToolBarPosition
-//QStyleOptionToolBar::ToolBarPosition
 type QStyleOptionToolBar__ToolBarPosition int64
 
 const (
@@ -47105,8 +47301,9 @@ const (
 	QStyleOptionToolBar__OnlyOne   QStyleOptionToolBar__ToolBarPosition = QStyleOptionToolBar__ToolBarPosition(3)
 )
 
+// QStyleOptionToolBar::ToolBarFeature
+//
 //go:generate stringer -type=QStyleOptionToolBar__ToolBarFeature
-//QStyleOptionToolBar::ToolBarFeature
 type QStyleOptionToolBar__ToolBarFeature int64
 
 const (
@@ -47235,24 +47432,27 @@ func NewQStyleOptionToolBoxFromPointer(ptr unsafe.Pointer) (n *QStyleOptionToolB
 func (ptr *QStyleOptionToolBox) DestroyQStyleOptionToolBox() {
 }
 
+// QStyleOptionToolBox::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionToolBox__StyleOptionType
-//QStyleOptionToolBox::StyleOptionType
 type QStyleOptionToolBox__StyleOptionType int64
 
 var (
 	QStyleOptionToolBox__Type QStyleOptionToolBox__StyleOptionType = QStyleOptionToolBox__StyleOptionType(QStyleOption__SO_ToolBox)
 )
 
+// QStyleOptionToolBox::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionToolBox__StyleOptionVersion
-//QStyleOptionToolBox::StyleOptionVersion
 type QStyleOptionToolBox__StyleOptionVersion int64
 
 var (
 	QStyleOptionToolBox__Version QStyleOptionToolBox__StyleOptionVersion = QStyleOptionToolBox__StyleOptionVersion(2)
 )
 
+// QStyleOptionToolBox::TabPosition
+//
 //go:generate stringer -type=QStyleOptionToolBox__TabPosition
-//QStyleOptionToolBox::TabPosition
 type QStyleOptionToolBox__TabPosition int64
 
 const (
@@ -47262,8 +47462,9 @@ const (
 	QStyleOptionToolBox__OnlyOneTab QStyleOptionToolBox__TabPosition = QStyleOptionToolBox__TabPosition(3)
 )
 
+// QStyleOptionToolBox::SelectedPosition
+//
 //go:generate stringer -type=QStyleOptionToolBox__SelectedPosition
-//QStyleOptionToolBox::SelectedPosition
 type QStyleOptionToolBox__SelectedPosition int64
 
 const (
@@ -47363,24 +47564,27 @@ func NewQStyleOptionToolButtonFromPointer(ptr unsafe.Pointer) (n *QStyleOptionTo
 func (ptr *QStyleOptionToolButton) DestroyQStyleOptionToolButton() {
 }
 
+// QStyleOptionToolButton::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionToolButton__StyleOptionType
-//QStyleOptionToolButton::StyleOptionType
 type QStyleOptionToolButton__StyleOptionType int64
 
 var (
 	QStyleOptionToolButton__Type QStyleOptionToolButton__StyleOptionType = QStyleOptionToolButton__StyleOptionType(QStyleOption__SO_ToolButton)
 )
 
+// QStyleOptionToolButton::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionToolButton__StyleOptionVersion
-//QStyleOptionToolButton::StyleOptionVersion
 type QStyleOptionToolButton__StyleOptionVersion int64
 
 var (
 	QStyleOptionToolButton__Version QStyleOptionToolButton__StyleOptionVersion = QStyleOptionToolButton__StyleOptionVersion(1)
 )
 
+// QStyleOptionToolButton::ToolButtonFeature
+//
 //go:generate stringer -type=QStyleOptionToolButton__ToolButtonFeature
-//QStyleOptionToolButton::ToolButtonFeature
 type QStyleOptionToolButton__ToolButtonFeature int64
 
 const (
@@ -47533,24 +47737,27 @@ func NewQStyleOptionViewItemFromPointer(ptr unsafe.Pointer) (n *QStyleOptionView
 func (ptr *QStyleOptionViewItem) DestroyQStyleOptionViewItem() {
 }
 
+// QStyleOptionViewItem::StyleOptionType
+//
 //go:generate stringer -type=QStyleOptionViewItem__StyleOptionType
-//QStyleOptionViewItem::StyleOptionType
 type QStyleOptionViewItem__StyleOptionType int64
 
 var (
 	QStyleOptionViewItem__Type QStyleOptionViewItem__StyleOptionType = QStyleOptionViewItem__StyleOptionType(QStyleOption__SO_ViewItem)
 )
 
+// QStyleOptionViewItem::StyleOptionVersion
+//
 //go:generate stringer -type=QStyleOptionViewItem__StyleOptionVersion
-//QStyleOptionViewItem::StyleOptionVersion
 type QStyleOptionViewItem__StyleOptionVersion int64
 
 var (
 	QStyleOptionViewItem__Version QStyleOptionViewItem__StyleOptionVersion = QStyleOptionViewItem__StyleOptionVersion(4)
 )
 
+// QStyleOptionViewItem::Position
+//
 //go:generate stringer -type=QStyleOptionViewItem__Position
-//QStyleOptionViewItem::Position
 type QStyleOptionViewItem__Position int64
 
 const (
@@ -47560,8 +47767,9 @@ const (
 	QStyleOptionViewItem__Bottom QStyleOptionViewItem__Position = QStyleOptionViewItem__Position(3)
 )
 
+// QStyleOptionViewItem::ViewItemFeature
+//
 //go:generate stringer -type=QStyleOptionViewItem__ViewItemFeature
-//QStyleOptionViewItem::ViewItemFeature
 type QStyleOptionViewItem__ViewItemFeature int64
 
 const (
@@ -47573,8 +47781,9 @@ const (
 	QStyleOptionViewItem__HasDecoration     QStyleOptionViewItem__ViewItemFeature = QStyleOptionViewItem__ViewItemFeature(0x10)
 )
 
+// QStyleOptionViewItem::ViewItemPosition
+//
 //go:generate stringer -type=QStyleOptionViewItem__ViewItemPosition
-//QStyleOptionViewItem::ViewItemPosition
 type QStyleOptionViewItem__ViewItemPosition int64
 
 const (
@@ -48333,8 +48542,9 @@ func NewQSwipeGestureFromPointer(ptr unsafe.Pointer) (n *QSwipeGesture) {
 	return
 }
 
+// QSwipeGesture::SwipeDirection
+//
 //go:generate stringer -type=QSwipeGesture__SwipeDirection
-//QSwipeGesture::SwipeDirection
 type QSwipeGesture__SwipeDirection int64
 
 const (
@@ -48433,8 +48643,9 @@ func NewQSystemTrayIconFromPointer(ptr unsafe.Pointer) (n *QSystemTrayIcon) {
 	return
 }
 
+// QSystemTrayIcon::ActivationReason
+//
 //go:generate stringer -type=QSystemTrayIcon__ActivationReason
-//QSystemTrayIcon::ActivationReason
 type QSystemTrayIcon__ActivationReason int64
 
 const (
@@ -48445,8 +48656,9 @@ const (
 	QSystemTrayIcon__MiddleClick QSystemTrayIcon__ActivationReason = QSystemTrayIcon__ActivationReason(4)
 )
 
+// QSystemTrayIcon::MessageIcon
+//
 //go:generate stringer -type=QSystemTrayIcon__MessageIcon
-//QSystemTrayIcon::MessageIcon
 type QSystemTrayIcon__MessageIcon int64
 
 const (
@@ -48829,8 +49041,9 @@ func NewQTabBarFromPointer(ptr unsafe.Pointer) (n *QTabBar) {
 	return
 }
 
+// QTabBar::Shape
+//
 //go:generate stringer -type=QTabBar__Shape
-//QTabBar::Shape
 type QTabBar__Shape int64
 
 const (
@@ -48844,8 +49057,9 @@ const (
 	QTabBar__TriangularEast  QTabBar__Shape = QTabBar__Shape(7)
 )
 
+// QTabBar::ButtonPosition
+//
 //go:generate stringer -type=QTabBar__ButtonPosition
-//QTabBar::ButtonPosition
 type QTabBar__ButtonPosition int64
 
 const (
@@ -48853,8 +49067,9 @@ const (
 	QTabBar__RightSide QTabBar__ButtonPosition = QTabBar__ButtonPosition(1)
 )
 
+// QTabBar::SelectionBehavior
+//
 //go:generate stringer -type=QTabBar__SelectionBehavior
-//QTabBar::SelectionBehavior
 type QTabBar__SelectionBehavior int64
 
 const (
@@ -49396,8 +49611,9 @@ func NewQTabWidgetFromPointer(ptr unsafe.Pointer) (n *QTabWidget) {
 	return
 }
 
+// QTabWidget::TabPosition
+//
 //go:generate stringer -type=QTabWidget__TabPosition
-//QTabWidget::TabPosition
 type QTabWidget__TabPosition int64
 
 const (
@@ -49407,8 +49623,9 @@ const (
 	QTabWidget__East  QTabWidget__TabPosition = QTabWidget__TabPosition(3)
 )
 
+// QTabWidget::TabShape
+//
 //go:generate stringer -type=QTabWidget__TabShape
-//QTabWidget::TabShape
 type QTabWidget__TabShape int64
 
 const (
@@ -51477,8 +51694,9 @@ func NewQTableWidgetItemFromPointer(ptr unsafe.Pointer) (n *QTableWidgetItem) {
 	return
 }
 
+// QTableWidgetItem::ItemType
+//
 //go:generate stringer -type=QTableWidgetItem__ItemType
-//QTableWidgetItem::ItemType
 type QTableWidgetItem__ItemType int64
 
 const (
@@ -52450,8 +52668,9 @@ func NewQTextEditFromPointer(ptr unsafe.Pointer) (n *QTextEdit) {
 	return
 }
 
+// QTextEdit::LineWrapMode
+//
 //go:generate stringer -type=QTextEdit__LineWrapMode
-//QTextEdit::LineWrapMode
 type QTextEdit__LineWrapMode int64
 
 const (
@@ -52461,8 +52680,9 @@ const (
 	QTextEdit__FixedColumnWidth QTextEdit__LineWrapMode = QTextEdit__LineWrapMode(3)
 )
 
+// QTextEdit::AutoFormattingFlag
+//
 //go:generate stringer -type=QTextEdit__AutoFormattingFlag
-//QTextEdit::AutoFormattingFlag
 type QTextEdit__AutoFormattingFlag int64
 
 const (
@@ -54290,8 +54510,9 @@ func NewQToolButtonFromPointer(ptr unsafe.Pointer) (n *QToolButton) {
 	return
 }
 
+// QToolButton::ToolButtonPopupMode
+//
 //go:generate stringer -type=QToolButton__ToolButtonPopupMode
-//QToolButton::ToolButtonPopupMode
 type QToolButton__ToolButtonPopupMode int64
 
 const (
@@ -56326,8 +56547,9 @@ func NewQTreeWidgetItemFromPointer(ptr unsafe.Pointer) (n *QTreeWidgetItem) {
 	return
 }
 
+// QTreeWidgetItem::ItemType
+//
 //go:generate stringer -type=QTreeWidgetItem__ItemType
-//QTreeWidgetItem::ItemType
 type QTreeWidgetItem__ItemType int64
 
 const (
@@ -56335,8 +56557,9 @@ const (
 	QTreeWidgetItem__UserType QTreeWidgetItem__ItemType = QTreeWidgetItem__ItemType(1000)
 )
 
+// QTreeWidgetItem::ChildIndicatorPolicy
+//
 //go:generate stringer -type=QTreeWidgetItem__ChildIndicatorPolicy
-//QTreeWidgetItem::ChildIndicatorPolicy
 type QTreeWidgetItem__ChildIndicatorPolicy int64
 
 const (
@@ -56887,8 +57110,9 @@ func NewQTreeWidgetItemIteratorFromPointer(ptr unsafe.Pointer) (n *QTreeWidgetIt
 	return
 }
 
+// QTreeWidgetItemIterator::IteratorFlag
+//
 //go:generate stringer -type=QTreeWidgetItemIterator__IteratorFlag
-//QTreeWidgetItemIterator::IteratorFlag
 type QTreeWidgetItemIterator__IteratorFlag int64
 
 const (
@@ -58380,8 +58604,9 @@ func NewQWidgetFromPointer(ptr unsafe.Pointer) (n *QWidget) {
 	return
 }
 
+// QWidget::RenderFlag
+//
 //go:generate stringer -type=QWidget__RenderFlag
-//QWidget::RenderFlag
 type QWidget__RenderFlag int64
 
 const (
@@ -61317,8 +61542,9 @@ func NewQWizardFromPointer(ptr unsafe.Pointer) (n *QWizard) {
 	return
 }
 
+// QWizard::WizardButton
+//
 //go:generate stringer -type=QWizard__WizardButton
-//QWizard::WizardButton
 type QWizard__WizardButton int64
 
 const (
@@ -61337,8 +61563,9 @@ const (
 	QWizard__NButtons         QWizard__WizardButton = QWizard__WizardButton(9)
 )
 
+// QWizard::WizardPixmap
+//
 //go:generate stringer -type=QWizard__WizardPixmap
-//QWizard::WizardPixmap
 type QWizard__WizardPixmap int64
 
 const (
@@ -61349,8 +61576,9 @@ const (
 	QWizard__NPixmaps         QWizard__WizardPixmap = QWizard__WizardPixmap(4)
 )
 
+// QWizard::WizardStyle
+//
 //go:generate stringer -type=QWizard__WizardStyle
-//QWizard::WizardStyle
 type QWizard__WizardStyle int64
 
 var (
@@ -61361,8 +61589,9 @@ var (
 	QWizard__NStyles      QWizard__WizardStyle = QWizard__WizardStyle(4)
 )
 
+// QWizard::WizardOption
+//
 //go:generate stringer -type=QWizard__WizardOption
-//QWizard::WizardOption
 type QWizard__WizardOption int64
 
 const (
